@@ -1,0 +1,28 @@
+{
+  "name": "@hazpro/queue",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:HazPro/queue.git",
+  "author": "Anton Pronin <pronin@hazpro.ru>",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "test": "mocha -r ts-node/register test/**/*Test.ts"
+  },
+  "devDependencies": {
+    "@types/amqp": "^0.2.4",
+    "@types/amqplib": "^0.5.9",
+    "@types/chai": "^4.1.7",
+    "@types/lodash": "^4.14.120",
+    "@types/mocha": "^5.2.5",
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0",
+    "ts-node": "^7.0.1",
+    "typescript": "^3.2.2"
+  },
+  "dependencies": {
+    "amqp": "^0.2.7",
+    "amqplib": "^0.5.3",
+    "lodash": "^4.17.11"
+  }
+}
