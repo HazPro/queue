@@ -20,6 +20,7 @@ describe('Queued test', () => {
     }
     const t = await queue.pushTask(task)
     const s = await queue.waitTaskType('report')
-    console.log(JSON.parse(s.content.toString('utf8')))
+    console.log(s.body)
+    s.ack()
   })
 })
